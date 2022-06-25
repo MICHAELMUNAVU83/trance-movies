@@ -17,7 +17,7 @@ const displaylikes = async function () {
           },
         );
         const requestedlikes = await requestlikes.text();
-        return requestedlikes
+      
         // Getting from api
 
         const gotlikesapi = await fetch(

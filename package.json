@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "watch": "jest --watch"
+
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   },
   "homepage": "https://github.com/MICHAELMUNAVU83/trance-movies#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.1",

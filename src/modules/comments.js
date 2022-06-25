@@ -44,24 +44,8 @@ const addComment = async function () {
               `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/5zzUqJRXk3PorRGTjdex/comments/?item_id=${newmovie.item_id}`,
             );
             const gotComment = await getcomment.json();
-            let commentcounter = 0;
-            gotComment.forEach((eachcomment) => {
-              commentcounter += 1;
-              const commentdiv = document.createElement('div');
-              commentdiv.innerHTML += `
-              <div class ="comment-section">
-              <span>Comment :${eachcomment.comment}</span><span class= "user-span"> BY ${eachcomment.username}</span>
-        
-               </div>
-     
-                       `;
+            addCommentCounter(gotComment);
 
-              document.querySelector('.comment-sections').appendChild(commentdiv);
-            });
-            document.querySelector('.comment-counter').innerHTML = `
-            ${commentcounter}
-            
-            `;
             console.log(commentcounter);
             document.querySelector('.user').value = ' ';
             document.querySelector('.comment').value = ' ';
@@ -70,6 +54,27 @@ const addComment = async function () {
       });
     });
   });
+};
+
+const addCommentCounter = async function (gotComment) {
+  let commentcounter = 0;
+  gotComment.forEach((eachcomment) => {
+    commentcounter += 1;
+    const commentdiv = document.createElement('div');
+    commentdiv.innerHTML += `
+    <div class ="comment-section">
+    <span>Comment :${eachcomment.comment}</span><span class= "user-span"> BY ${eachcomment.username}</span>
+
+     </div>
+
+             `;
+
+    document.querySelector('.comment-sections').appendChild(commentdiv);
+  });
+  document.querySelector('.comment-counter').innerHTML = `
+  ${commentcounter}
+  
+  `;
 };
 
 export default addComment;
