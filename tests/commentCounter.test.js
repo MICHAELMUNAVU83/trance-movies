@@ -14,6 +14,6 @@ describe("Comment counter", () => {
     // act
     const data2 = await commentCounter(data1);
     // assert
-    expect(data2).toBe(4);s
+    expect(data2).toBe(4);
   });
 });

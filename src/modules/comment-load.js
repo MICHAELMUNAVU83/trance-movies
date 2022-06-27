@@ -7,7 +7,7 @@ const loadComment = async function () {
     showModalBtn.forEach((eachmodalbtn) => {
       eachmodalbtn.addEventListener('click', async () => {
         const getcomments = await fetch(
-          `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/5zzUqJRXk3PorRGTjdex/comments/?item_id=${movieData.id}`,
+          `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/iIKXmVSeWGwWL3aRmXsK/comments/?item_id=${movieData.id}`,
         );
         const gotComments = await getcomments.json();
         let commentcounter = 0;

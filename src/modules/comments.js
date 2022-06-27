@@ -31,7 +31,7 @@ const addComment = async function () {
             );
 
             const fetchcomment = await fetch(
-              'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/5zzUqJRXk3PorRGTjdex/comments',
+              'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/iIKXmVSeWGwWL3aRmXsK/comments',
               {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -41,7 +41,7 @@ const addComment = async function () {
             const fetchedComment = await fetchcomment.text();
 
             const getcomment = await fetch(
-              `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/5zzUqJRXk3PorRGTjdex/comments/?item_id=${newmovie.item_id}`,
+              `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/iIKXmVSeWGwWL3aRmXsK/comments/?item_id=${newmovie.item_id}`,
             );
             const gotComment = await getcomment.json();
             addCommentCounter(gotComment);
