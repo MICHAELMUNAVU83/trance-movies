@@ -7,8 +7,8 @@
     "test": "jest",
     "build": "webpack",
     "start": "webpack serve --open",
-    "watch": "jest --watch"
-
+    "watch": "jest --watch",
+    "deploy":" gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -20,10 +20,11 @@
   "bugs": {
     "url": "https://github.com/MICHAELMUNAVU83/trance-movies/issues"
   },
-  "homepage": "https://github.com/MICHAELMUNAVU83/trance-movies#readme",
+  "homepage": "https://github.com/MICHAELMUNAVU83/trance-movies",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.1",
     "style-loader": "^3.3.1",
