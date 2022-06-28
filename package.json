@@ -1,0 +1,38 @@
+{
+  "name": "trance-movies",
+  "version": "1.0.0",
+  "description": "If you are not familiar with linters, read [root level README](../README.md).",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "start": "webpack serve --open",
+    "watch": "jest --watch"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MICHAELMUNAVU83/trance-movies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MICHAELMUNAVU83/trance-movies/issues"
+  },
+  "homepage": "https://github.com/MICHAELMUNAVU83/trance-movies#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.1",
+    "style-loader": "^3.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  }
+}
